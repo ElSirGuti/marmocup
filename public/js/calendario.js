@@ -12,16 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 hora: '19:00 GMT-4',
                 estado: 'Concluido'
             },
-            {
-                id: 'evento-2',
-                imagen: 'img/circuitos/spa-pcup.jpg',
-                torneo: 'Porsche Mobil 1 Super Cup',
-                ronda: 'Ronda 5: Spa Francorchamps',
-                plataforma: 'Assetto Corsa',
-                fecha: '15 Junio 2025',
-                hora: '20:00 GMT-4',
-                estado: 'Próximo'
-            },
+            // {
+            //     id: 'evento-2',
+            //     imagen: 'img/circuitos/spa-pcup.jpg',
+            //     torneo: 'Porsche Mobil 1 Super Cup',
+            //     ronda: 'Ronda 5: Spa Francorchamps',
+            //     plataforma: 'Assetto Corsa',
+            //     fecha: '15 Junio 2025',
+            //     hora: '20:00 GMT-4',
+            //     estado: 'Próximo'
+            // },
             {
                 id: 'evento-3',
                 imagen: 'img/circuitos/vir.jpg',
@@ -32,16 +32,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 hora: '19:00 GMT-4',
                 estado: 'Próximo'
             },
-            {
-                id: 'evento-4',
-                imagen: 'img/circuitos/hungaroring.jpg',
-                torneo: 'Porsche Mobil 1 Super Cup',
-                ronda: 'Ronda 6: Hungaroring',
-                plataforma: 'Assetto Corsa',
-                fecha: '22 Junio 2025',
-                hora: '20:00 GMT-4',
-                estado: 'Próximo'
-            },
+            // {
+            //     id: 'evento-4',
+            //     imagen: 'img/circuitos/hungaroring.jpg',
+            //     torneo: 'Porsche Mobil 1 Super Cup',
+            //     ronda: 'Ronda 6: Hungaroring',
+            //     plataforma: 'Assetto Corsa',
+            //     fecha: '22 Junio 2025',
+            //     hora: '20:00 GMT-4',
+            //     estado: 'Próximo'
+            // },
             {
                 id: 'evento-5',
                 imagen: 'img/circuitos/navarra.jpg',
@@ -52,16 +52,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 hora: '19:00 GMT-4',
                 estado: 'Próximo'
             },
-            {
-                id: 'evento-6',
-                imagen: 'img/circuitos/zandvoort.jpeg',
-                torneo: 'Porsche Mobil 1 Super Cup',
-                ronda: 'Ronda 7: Zandvoort',
-                plataforma: 'Assetto Corsa',
-                fecha: '29 Junio 2025',
-                hora: '20:00 GMT-4',
-                estado: 'Próximo'
-            }
+            // {
+            //     id: 'evento-6',
+            //     imagen: 'img/circuitos/zandvoort.jpeg',
+            //     torneo: 'Porsche Mobil 1 Super Cup',
+            //     ronda: 'Ronda 7: Zandvoort',
+            //     plataforma: 'Assetto Corsa',
+            //     fecha: '29 Junio 2025',
+            //     hora: '20:00 GMT-4',
+            //     estado: 'Próximo'
+            // }
         ],
         'julio-2025': [
             {
@@ -74,16 +74,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 hora: '19:00 GMT-4',
                 estado: 'Próximo'
             },
-            {
-                id: 'evento-8',
-                imagen: 'img/circuitos/monza.jpeg',
-                torneo: 'Porsche Mobil 1 Super Cup',
-                ronda: 'Ronda 8: Monza',
-                plataforma: 'Assetto Corsa',
-                fecha: '6 Julio 2025',
-                hora: '20:00 GMT-4',
-                estado: 'Próximo'
-            }
+            // {
+            //     id: 'evento-8',
+            //     imagen: 'img/circuitos/monza.jpeg',
+            //     torneo: 'Porsche Mobil 1 Super Cup',
+            //     ronda: 'Ronda 8: Monza',
+            //     plataforma: 'Assetto Corsa',
+            //     fecha: '6 Julio 2025',
+            //     hora: '20:00 GMT-4',
+            //     estado: 'Próximo'
+            // }
         ]
     };
 
