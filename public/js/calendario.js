@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 plataforma: 'iRacing',
                 fecha: '13 Junio 2025',
                 hora: '19:00 GMT-4',
-                estado: 'Próximo'
+                estado: 'Concluido'
             },
             {
                 id: 'evento-2',
