@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall of Fame - Marmo Cup</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hall-of-fame.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="glass-nav">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="img/Marmo-Cup-logo.png" alt="Marmo Cup" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="index.html#torneos" class="nav-link">Torneos</a></li>
+          <li><a href="index.html#team" class="nav-link">Equipo</a></li>
+          <li><a href="calendario.html" class="nav-link">Calendario</a></li>
+          <li><a href="resultados.html" class="nav-link">Resultados</a></li>
+          <li><a href="hall-of-fame.html" class="nav-link active">Hall of Fame</a></li>
+          <li class="nav-cta"><a href="#.html" class="btn-login">Admin Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hof-hero">
+        <div class="hof-hero-content">
+            <h1>HALL OF FAME</h1>
+            <p>Los más grandes de la Marmo Cup</p>
+        </div>
+    </section>
+
+    <!-- Nuestros Campeones Section -->
+    <section class="hof-section">
+        <div class="section-header">
+            <h2 class="section-title">NUESTROS CAMPEONES</h2>
+            <p class="section-subtitle">Los pilotos que han levantado el trofeo</p>
+        </div>
+        
+        <div class="champions-grid">
+            <!-- Campeón 1 -->
+            <div class="champion-card">
+                <div class="champion-img">
+                    <img src="img/pilotos/marmota.png" alt="Campeón 1">
+                </div>
+                <div class="champion-info">
+                    <h3>FELIX Vargas "MARMOTA"</h3>
+                    <p>Chigüire Racing Team</p>
+                    <div class="champion-titles">
+                        <span>IMSA VP Racing Sportscar Challenge 2025 - Categoría LMP3</span>
+                    </div>
+                </div>
+                <button class="btn-more-info" data-pilot="felix-vargas">Más Información</button>
+            </div>
+            
+            <!-- Campeón 2 -->
+            <div class="champion-card">
+                <div class="champion-img">
+                    <img src="img/pilotos/hugo.png" alt="Campeón 2">
+                </div>
+                <div class="champion-info">
+                    <h3>Hugo De Sousa</h3>
+                    <p>Chigüire Racing Team, Etron Racing</p>
+                    <div class="champion-titles">
+                        <span>IMSA VP Racing Sportscar Challenge 2025 - Categoría GSX</span>
+                    </div>
+                </div>
+                <button class="btn-more-info" data-pilot="hugo-de-sousa">Más Información</button>
+            </div>
+            
+            <!-- Campeón 3 -->
+            <div class="champion-card">
+                <div class="champion-img">
+                    <img src="img/pilotos/alejandro.jpg" alt="Campeón 3">
+                </div>
+                <div class="champion-info">
+                    <h3>Alejandro Torres</h3>
+                    <p>Champ Racing Inc.</p>
+                    <div class="champion-titles">
+                        <span>MarmoCup TCR Latam 2024</span>
+                    </div>
+                </div>
+                <button class="btn-more-info" data-pilot="alejandro-torres">Más Información</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Más Victorias Section -->
+    <section class="hof-section bg-dark">
+        <div class="section-header">
+            <h2 class="section-title">MÁS VICTORIAS</h2>
+            <p class="section-subtitle">Los pilotos más ganadores</p>
+        </div>
+        
+        <div class="winners-grid">
+            <!-- Ganador 1 -->
+            <div class="winner-card">
+                <div class="winner-img">
+                    <img src="img/pilotos/paul-alex.webp" alt="Ganador 1">
+                    <div class="winner-badge">1</div>
+                </div>
+                <div class="winner-info">
+                    <h3>Paul Alexander Ordoñez</h3>
+                    <p>Top Fuel Simracing Team</p>
+                    <div class="winner-stats">
+                        <span>3 Victorias</span>
+                    </div>
+                </div>
+                <button class="btn-more-info" data-pilot="paul-alex">Más Información</button>
+            </div>
+            
+            <!-- Ganador 2 -->
+            <div class="winner-card">
+                <div class="winner-img">
+                    <img src="img/miembros/team-3.jpg" alt="Ganador 2">
+                    <div class="winner-badge">2</div>
+                </div>
+                <div class="winner-info">
+                    <h3>Luis Ramírez</h3>
+                    <p>Champ Racing Inc.</p>
+                    <div class="winner-stats">
+                        <span>2 Victorias</span>
+                    </div>
+                </div>
+                <button class="btn-more-info" data-pilot="luis-ramirez">Más Información</button>
+            </div>
+            
+            <!-- Ganador 3 -->
+            <div class="winner-card">
+                <div class="winner-img">
+                    <img src="img/pilotos/jhoiner.jpg" alt="Ganador 3">
+                    <div class="winner-badge">3</div>
+                </div>
+                <div class="winner-info">
+                    <h3>Jhoiner Cornelis</h3>
+                    <p>Top Fuel Simracing Team</p>
+                    <div class="winner-stats">
+                        <span>2 Victorias</span>
+                    </div>
+                </div>
+                <button class="btn-more-info" data-pilot="jhoiner-cornelis">Más Información</button>
+            </div>
+            
+            <!-- Ganador 4 -->
+            <div class="winner-card">
+                <div class="winner-img">
+                    <img src="img/pilotos/manolo.jpg" alt="Ganador 4">
+                    <div class="winner-badge">4</div>
+                </div>
+                <div class="winner-info">
+                    <h3>Pablo Granadillo "Manolo"</h3>
+                    <p>Top Fuel Simracing Team</p>
+                    <div class="winner-stats">
+                        <span>2 Victorias</span>
+                    </div>
+                </div>
+                <button class="btn-more-info" data-pilot="pablo-granadillo">Más Información</button>
+            </div>
+            
+            <!-- Ganador 5 -->
+            <div class="winner-card">
+                <div class="winner-img">
+                    <img src="img/pilotos/ricardo.jpeg" alt="Ganador 5">
+                    <div class="winner-badge">5</div>
+                </div>
+                <div class="winner-info">
+                    <h3>Ricardo Benítez</h3>
+                    <p>Upper Esport</p>
+                    <div class="winner-stats">
+                        <span>2 Victorias</span>
+                    </div>
+                </div>
+                <button class="btn-more-info" data-pilot="ricardo-benitez">Más Información</button>
+            </div>
+
+            <!-- Ganador 6 -->
+            <div class="winner-card">
+                <div class="winner-img">
+                    <img src="img/pilotos/marmota.png" alt="Ganador 5">
+                    <div class="winner-badge">5</div>
+                </div>
+                <div class="winner-info">
+                    <h3>Felix Vargas "Marmota"</h3>
+                    <p>Chigüire Racing Team</p>
+                    <div class="winner-stats">
+                        <span>2 Victorias</span>
+                    </div>
+                </div>
+                <button class="btn-more-info" data-pilot="felix-vargas">Más Información</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipos más exitosos Section -->
+    <section class="hof-section">
+        <div class="section-header">
+            <h2 class="section-title">EQUIPOS MÁS EXITOSOS</h2>
+            <p class="section-subtitle">Los equipos que han marcado historia</p>
+        </div>
+        
+        <div class="teams-grid">
+            <!-- Equipo 1 -->
+            <div class="team-card-hof">
+                <div class="team-img-hof">
+                    <img src="img/equipos/chiguire-racing.png" alt="Marmo Racing">
+                </div>
+                <div class="team-info-hof">
+                    <h3>Chigüire Racing Team</h3>
+                    <div class="team-stats-hof">
+                        <span>2 Campeonatos</span>
+                        <span>6 Victorias</span>
+                    </div>
+                </div>
+                <button class="btn-more-info-team" data-team="chiguire-racing-team">Más Información</button>
+            </div>
+            
+            <!-- Equipo 2 -->
+            <div class="team-card-hof">
+                <div class="team-img-hof">
+                    <img src="img/equipos/topfuel.png" alt="Top Fuel Simracing">
+                </div>
+                <div class="team-info-hof">
+                    <h3>Top Fuel SimRacing Team</h3>
+                    <div class="team-stats-hof">
+                        <span>2 Campeonatos</span>
+                        <span>6 Victorias</span>
+                    </div>
+                </div>
+                <button class="btn-more-info-team" data-team="top-fuel">Más Información</button>
+            </div>
+            
+            <!-- Equipo 3 -->
+            <div class="team-card-hof">
+                <div class="team-img-hof">
+                    <img src="img/equipos/champ-racing.png" alt="Sim Boxer Racing">
+                </div>
+                <div class="team-info-hof">
+                    <h3>Champ Racing Inc.</h3>
+                    <div class="team-stats-hof">
+                        <span>1 Campeonato</span>
+                        <span>4 Victorias</span>
+                    </div>
+                </div>
+                <button class="btn-more-info-team" data-team="champ-racing">Más Información</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Piloto -->
+    <div class="modal" id="pilotModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-pilot-container">
+                <div class="modal-pilot-img">
+                    <img src="" alt="Piloto" id="modalPilotImg">
+                </div>
+                <div class="modal-pilot-info">
+                    <h2 id="modalPilotName"></h2>
+                    <p class="pilot-nickname" id="modalPilotNickname"></p>
+                    <div class="pilot-meta">
+                        <p><span id="modalPilotAge"></span> años</p>
+                        <p><img src="" alt="Bandera" id="modalPilotFlag" class="flag-icon"> <span id="modalPilotNationality"></span></p>
+                    </div>
+                    
+                    <div class="pilot-stats">
+                        <h3>Estadísticas</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalPilotTitles">0</span>
+                                <span class="stat-label">Campeonatos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalPilotWins">0</span>
+                                <span class="stat-label">Victorias</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalPilotPodiums">0</span>
+                                <span class="stat-label">Podios</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalPilotPoles">0</span>
+                                <span class="stat-label">Poles</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalPilotFastlaps">0</span>
+                                <span class="stat-label">Vueltas Rápidas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pilot-titles">
+                        <h3>Campeonatos Ganados</h3>
+                        <ul id="modalPilotTitlesList">
+                            <!-- Lista de campeonatos se llenará con JS -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Equipo -->
+    <div class="modal" id="teamModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-team-container">
+                <div class="modal-team-img">
+                    <img src="" alt="Equipo" id="modalTeamImg">
+                </div>
+                <div class="modal-team-info">
+                    <h2 id="modalTeamName"></h2>
+                    <p class="team-nationality"><img src="" alt="Bandera" id="modalTeamFlag" class="flag-icon"> <span id="modalTeamNationality"></span></p>
+                    
+                    <div class="team-stats">
+                        <h3>Estadísticas</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalTeamTitles">0</span>
+                                <span class="stat-label">Campeonatos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalTeamWins">0</span>
+                                <span class="stat-label">Victorias</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalTeamPodiums">0</span>
+                                <span class="stat-label">Podios</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalTeamPoles">0</span>
+                                <span class="stat-label">Poles</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" id="modalTeamFastlaps">0</span>
+                                <span class="stat-label">Vueltas Rápidas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-titles">
+                        <h3>Campeonatos Ganados</h3>
+                        <ul id="modalTeamTitlesList">
+                            <!-- Lista de campeonatos se llenará con JS -->
+                        </ul>
+                    </div>
+                    
+                    <div class="team-drivers">
+                        <h3>Pilotos</h3>
+                        <div class="drivers-grid" id="modalTeamDrivers">
+                            <!-- Pilotos se llenarán con JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/marmo-cup-logo-blanco.png" alt="Marmo Cup">
+                <p>La liga de simracing más emocionante de Venezuela y Latinoamérica</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="links-column">
+                    <h4>COMPETICIÓN</h4>
+                    <ul>
+                        <li><a href="https://docs.google.com/document/d/1fSERwISlpEPo9QvXLnzuVkL1iVXr8M5p2F3tk3O01n0/edit?tab=t.0" target="_blank">Reglamento</a></li>
+                        <li><a href="#">Calendario</a></li>
+                        <li><a href="#">Resultados</a></li>
+                        <li><a href="#">Clasificaciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="links-column">
+                    <h4>COMUNIDAD</h4>
+                    <ul>
+                        <li><a href="#">Foro</a></li>
+                        <li><a href="https://discord.gg/Afvhvh8fn2" target="_blank">Discord</a></li>
+                        <li><a href="#">Guías</a></li>
+                        <li><a href="#">Patrocinadores</a></li>
+                    </ul>
+                </div>
+                
+                <div class="links-column">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Patrocinios</a></li>
+                        <li><a href="#">Prensa</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>NEWSLETTER</h4>
+                <p>Recibe las últimas noticias de la Marmo Cup</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="https://www.youtube.com/@MarmoChampionships" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://discord.gg/Afvhvh8fn2" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://www.instagram.com/marmochampionships/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            
+            <div class="footer-legal">
+                <p>© 2025 Marmo Cup. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Términos</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/hall-of-fame.js"></script>
+</body>
+</html>
