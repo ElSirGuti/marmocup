@@ -55,7 +55,7 @@
 
       <div class="championship-grid">
         <!-- MarmoCup Sim Boxer 2025 -->
-        <div class="championship-card">
+        <div class="championship-card" data-championship="sim-boxer-2025">
           <div class="championship-header">
             <h3 class="championship-title">MarmoCup Sim Boxer 2025</h3>
             <span class="championship-status status-active">Activo</span>
@@ -66,7 +66,7 @@
           </div>
           <div class="championship-body">
             <ul class="rounds-list">
-              <li class="round-item">
+              <li class="round-item clickable" data-round="ronda-1">
                 <span class="round-name">Ronda 1: Oschersleben</span>
                 <span class="round-date">13 Jun 2025</span>
               </li>
@@ -84,7 +84,7 @@
               </li>
             </ul>
             <button class="view-results" data-modal="sim-boxer-2025">
-              Ver Resultados
+              Ver Posiciones
             </button>
           </div>
         </div>
@@ -137,7 +137,7 @@
               </li>
             </ul>
             <button class="view-results" data-modal="porsche-supercup-2025">
-              Ver Resultados
+              Ver Posiciones
             </button>
           </div>
         </div>
@@ -184,7 +184,7 @@
               </li>
             </ul>
             <button class="view-results" data-modal="super-formula-2025">
-              Ver Resultados
+              Ver Posiciones
             </button>
           </div>
         </div>
@@ -235,7 +235,7 @@
               </li>
             </ul>
             <button class="view-results" data-modal="track-toys-2025">
-              Ver Resultados
+              Ver Posiciones
             </button>
           </div>
         </div>
@@ -258,7 +258,7 @@
               </li>
             </ul>
             <button class="view-results" data-modal="endurance-spa-2025">
-              Ver Resultados
+              Ver Posiciones
             </button>
           </div>
         </div>
@@ -303,7 +303,7 @@
               </li>
             </ul>
             <button class="view-results" data-modal="imsa-2025">
-              Ver Resultados
+              Ver Posiciones
             </button>
           </div>
         </div>
@@ -346,7 +346,7 @@
               </li>
             </ul>
             <button class="view-results" data-modal="tcr-latam-2024">
-              Ver Resultados
+              Ver Posiciones
             </button>
           </div>
         </div>
@@ -798,6 +798,39 @@
       </div>
     </div>
 
+    <!-- Modal para resultados detallados por carrera -->
+    <div class="race-details-modal" id="race-details-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h2 class="modal-title" id="race-modal-title">Ronda 1: Oschersleben</h2>
+            <p class="modal-subtitle" id="race-modal-subtitle">MarmoCup SimBoxer 2025</p>
+          </div>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="results-tabs">
+            <button class="tab-btn active" data-tab="race-results">Resultados</button>
+            <button class="tab-btn" data-tab="race-qualifying">Clasificación</button>
+            <button class="tab-btn" data-tab="race-practice">Práctica</button>
+          </div>
+
+          <div class="tab-content active" id="race-results">
+            <!-- Contenido dinámico para resultados de carrera -->
+          </div>
+
+          <div class="tab-content" id="race-qualifying">
+            <!-- Contenido dinámico para clasificación -->
+          </div>
+
+          <div class="tab-content" id="race-practice">
+            <!-- Contenido dinámico para práctica -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-content">
@@ -823,7 +856,7 @@
                         <li><a href="#">Foro</a></li>
                         <li><a href="https://discord.gg/Afvhvh8fn2" target="_blank">Discord</a></li>
                         <li><a href="#">Guías</a></li>
-                        <li><a href="#">Patrocinadores</a></li>
+                        <li><a href="patrocinadores.html">Patrocinadores</a></li>
                     </ul>
                 </div>
                 

@@ -331,3 +331,106 @@
         padding: 15px;
     }
 }
+
+/* Estilos para el modal de detalles de carrera */
+.race-details-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  overflow-y: auto;
+  padding: 40px 20px;
+}
+
+.race-details-modal .modal-content {
+  background: var(--darker);
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.race-details-modal {
+  z-index: 2100;
+}
+
+.race-details-modal.show {
+  display: block;
+}
+
+.race-details-table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.race-details-table th {
+  background: rgba(255, 77, 0, 0.1);
+  color: var(--primary);
+  padding: 12px 15px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.race-details-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.race-details-table tr:last-child td {
+  border-bottom: none;
+}
+
+.race-details-table tr:hover td {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.fastest-lap {
+  color: #9c27b0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.fastest-lap i {
+  margin-right: 5px;
+}
+
+.category-title {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin: 20px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos responsive para el modal de carrera */
+@media (max-width: 768px) {
+  .race-details-table th, 
+  .race-details-table td {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+  
+  .race-details-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
+/* Agregar a resultados.css */
+.round-item.clickable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.round-item.clickable:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--primary);
+}

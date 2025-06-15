@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Datos de los campeonatos
   const championshipsData = {
     "sim-boxer-2025": {
       title: "MarmoCup SimBoxer 2025",
@@ -29,23 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
           title: "Pilotos Toyota GR86",
           headers: ["Pos", "Piloto", "Puntos"],
           data: [
-            { pos: 1, name: "Carlos Reyes", points: 50 },
+            { pos: 1, name: "Carlos Reyes", points: 55 },
             { pos: 2, name: "Hugo De Sousa", points: 40 },
             { pos: 3, name: "Castor Morales", points: 35 },
-            { pos: 4, name: "Luis Monasterios", points: 32 },
-            { pos: 5, name: "Juan Sanz", points: 38 },
-            { pos: 6, name: "Elionay Delgado", points: 28 },
+            { pos: 4, name: "Elionay Delgado", points: 33 },
+            { pos: 5, name: "Juan Sanz", points: 32 },
+            { pos: 6, name: "Luis Monasterios", points: 28 },
             { pos: 7, name: "Cesar Acevedo", points: 26 },
             { pos: 8, name: "Ranses Gutiérrez", points: 24 },
             { pos: 9, name: "Erick Ramírez", points: 22 },
-            { pos: 10, name: "José Pernía", points: 28 },
+            { pos: 10, name: "José Pernía", points: 20 },
             { pos: 11, name: "Felix Vargas", points: 19 },
             { pos: 12, name: "Pablo Ricupero", points: 18 },
             { pos: 13, name: "Gabriel Medina", points: 17 },
             { pos: 14, name: "Kevin Prada", points: 16 },
             { pos: 15, name: "Luis Millán", points: 0 },
             { pos: 16, name: "Andrés Gutiérrez", points: 0 },
-            { pos: 17, name: "Anthony Briceño", points: 0 },
+            { pos: 17, name: "Anthony Briceño", points: 0 }
           ],
         },
       },
@@ -682,7 +683,140 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
 
-  // Función para abrir modales
+  // Datos de las carreras detalladas
+  const raceDetailsData = {
+  "sim-boxer-2025": {
+    "ronda-1": {
+      title: "Ronda 1: Oschersleben",
+      subtitle: "MarmoCup SimBoxer 2025",
+      date: "13 Jun 2025",
+      results: {
+        "porsche-cup": {
+          title: "Porsche Cup",
+          headers: ["Pos", "Piloto", "Diferencia", "Vuelta Más Rápida", "Puntos"],
+          data: [
+            { pos: 1, name: "Gabriel Parra", time: "----", fastestLap: "1:28.499", points: 58},
+            { pos: 2, name: "Gustavo Mendez", time: "+17.101", fastestLap: "1:28.662", points: 40},
+            { pos: 3, name: "Ricardo Serrano", time: "+30.107", fastestLap: "1:29.441", points: 35},
+            { pos: 4, name: "Jesus Zabala", time: "+43.295", fastestLap: "1:30.514", points: 32},
+            { pos: 5, name: "Victor Cova", time: "+45.481", fastestLap: "1:30.742", points: 30},
+            { pos: 6, name: "José Manuel Ruiz", time: "+50.781", fastestLap: "1:30.739", points: 28},
+            { pos: 7, name: "Paul Ordoñez", time: "+51.604", fastestLap: "1:29.826", points: 26},
+            { pos: 8, name: "Hector Garcia", time: "+1:07", fastestLap: "1:30.128", points: 24},
+            { pos: 9, name: "Carlos Alemán", time: "+1:27", fastestLap: "1:30.954", points: 22},
+            { pos: 10, name: "Eduardo Socarras", time: "+1L", fastestLap: "1:30.068", points: 20},
+            { pos: 11, name: "Luis Ramírez", time: "DNF", fastestLap: "1:30.176", points: 19},
+            { pos: 12, name: "Jhoiner Cornelis", time: "DNF", fastestLap: "1:29.766", points: "0"}
+        ]
+        },
+        "toyota-gr86": {
+          title: "Toyota GR86",
+          headers: ["Pos", "Piloto", "Diferencia", "Vuelta Más Rápida", "Puntos"],
+          data: [
+            { pos: 1, name: "Carlos Reyes", time: "----", fastestLap: "1:41.275", points: 55},
+            { pos: 2, name: "Hugo De Sousa", time: "+0.951", fastestLap: "1:41.375", points: 40},
+            { pos: 3, name: "Castor Morales", time: "+2.415", fastestLap: "1:41.683", points: 35},
+            { pos: 4, name: "Juan Sanz", time: "+19.318", fastestLap: "1:42.260", points: 32},
+            { pos: 5, name: "Elionay Delgado", time: "+19.386", fastestLap: "1:41.272", points: 33},
+            { pos: 6, name: "Luis Monasterio", time: "+23.189", fastestLap: "1:42.540", points: 28},
+            { pos: 7, name: "Cesar Alejandro", time: "+29.041", fastestLap: "1:42.715", points: 26},
+            { pos: 8, name: "Ranses Gutierrez", time: "+33.988", fastestLap: "1:43.168", points: 24},
+            { pos: 9, name: "Erick Ramirez", time: "+51.822", fastestLap: "1:43.930", points: 22},
+            { pos: 10, name: "Jose Pernia", time: "+53.232", fastestLap: "1:41.451", points: 20},
+            { pos: 11, name: "Felix Vargas", time: "+1:01", fastestLap: "1:42.046", points: 19},
+            { pos: 12, name: "Pablo Ricupero", time: "+1L", fastestLap: "1:43.090", points: 18},
+            { pos: 13, name: "Gabo Medina", time: "+1L", fastestLap: "1:41.825", points: 17},
+            { pos: 14, name: "Kevin Perez", time: "+1L", fastestLap: "1:48.659", points: 16},
+            { pos: 15, name: "Luis Millán", time: "DNF", fastestLap: "1:42.368", points: "0"}
+          ]
+        }
+      },
+      qualifying: {
+        "porsche-cup": {
+          title: "Porsche Cup",
+          headers: ["Pos", "Piloto", "Mejor Vuelta", "Diferencia"],
+          "data": [
+            { pos: 1, name: "Gabriel Parra", bestLap: "1:28.132", diff: "----" },
+            { pos: 2, name: "Gustavo Mendez", bestLap: "1:28.295", diff: "+0.163" },
+            { pos: 3, name: "Jhoiner Cornelis", bestLap: "1:29.493", diff: "+1.361" },
+            { pos: 4, name: "Paul Ordoñez", bestLap: "1:29.527", diff: "+1.395" },
+            { pos: 5, name: "Luis Ramirez", bestLap: "1:29.659", diff: "+1.527" },
+            { pos: 6, name: "Ricardo Serrano", bestLap: "1:29.733", diff: "+1.601" },
+            { pos: 7, name: "Eduardo Socarras", bestLap: "1:29.985", diff: "+1.853" },
+            { pos: 8, name: "Victor Cova", bestLap: "1:30.416", diff: "+2.284" },
+            { pos: 9, name: "Jesus Zabala", bestLap: "1:30.634", diff: "+2.502" },
+            { pos: 10, name: "Carlos Aleman", bestLap: "1:30.736", diff: "+2.604" },
+            { pos: 11, name: "Hector Garcia", bestLap: "1:30.814", diff: "+2.682" },
+            { pos: 12, name: "Jose Manuel Ruiz", bestLap: "1:31.201", diff: "+3.069" }
+          ]
+        },
+        "toyota-gr86": {
+          title: "Toyota GR86",
+          headers: ["Pos", "Piloto", "Mejor Vuelta", "Diferencia"],
+          data: [
+            { pos: 1, name: "Carlos Alberto Reyes Saade", bestLap: "1:41.015", diff: "----" },
+            { pos: 2, name: "Hugo De Sousa", bestLap: "1:41.085", diff: "+0.070" },
+            { pos: 3, name: "Elionay Delgado", bestLap: "1:41.293", diff: "+0.278" },
+            { pos: 4, name: "Jose Pernia", bestLap: "1:41.385", diff: "+0.370" },
+            { pos: 5, name: "Luis Monasterio", bestLap: "1:41.442", diff: "+0.427" },
+            { pos: 6, name: "Felix Vargas", bestLap: "1:41.521", diff: "+0.506" },
+            { pos: 7, name: "Castor Morales", bestLap: "1:41.691", diff: "+0.676" },
+            { pos: 8, name: "Gabo Medina", bestLap: "1:41.745", diff: "+0.730" },
+            { pos: 9, name: "Cesar Alejandro", bestLap: "1:41.918", diff: "+0.903" },
+            { pos: 10, name: "Luis Millan", bestLap: "1:42.581", diff: "+1.566" },
+            { pos: 11, name: "Juan Sanzz", bestLap: "1:42.884", diff: "+1.869" },
+            { pos: 12, name: "Ranses Gutierrez2", bestLap: "1:43.332", diff: "+2.317" },
+            { pos: 13, name: "Kevin Perez", bestLap: "1:45.465", diff: "+4.450" }
+          ]
+        }
+      },
+      practice: {
+        "porsche-cup": {
+          title: "Porsche Cup",
+          headers: ["Pos", "Piloto", "Mejor Vuelta", "Vueltas"],
+          data: [
+            { "pos": 1, "name": "Gabriel Parra", "bestLap": "1:28.259", "laps": 12, "diff": "-" },
+            { "pos": 2, "name": "Gustavo Mendez", "bestLap": "1:28.473", "laps": 12, "diff": "+0.214" },
+            { "pos": 3, "name": "Ricardo Serrano", "bestLap": "1:29.663", "laps": 10, "diff": "+1.404" },
+            { "pos": 4, "name": "Jhoiner Cornelis", "bestLap": "1:29.904", "laps": 10, "diff": "+1.645" },
+            { "pos": 5, "name": "Eduardo Socarras", "bestLap": "1:29.905", "laps": 8, "diff": "+1.646" },
+            { "pos": 6, "name": "Luis Ramirez", "bestLap": "1:30.116", "laps": 11, "diff": "+1.857" },
+            { "pos": 7, "name": "Jesus Zabala", "bestLap": "1:30.116", "laps": 10, "diff": "+1.857" },
+            { "pos": 8, "name": "Victor Cova", "bestLap": "1:30.417", "laps": 7, "diff": "+2.158" },
+            { "pos": 9, "name": "Carlos Aleman", "bestLap": "1:30.473", "laps": 9, "diff": "+2.214" },
+            { "pos": 10, "name": "Paul Ordoñez", "bestLap": "1:30.621", "laps": 4, "diff": "+2.362" },
+            { "pos": 11, "name": "Hector Garcia", "bestLap": "1:31.102", "laps": 2, "diff": "+2.843" },
+            { "pos": 12, "name": "Jose Manuel Ruiz", "bestLap": "1:31.979", "laps": 4, "diff": "+3.720" }
+          ]
+        },
+        "toyota-gr86": {
+          title: "Toyota GR86",
+          headers: ["Pos", "Piloto", "Mejor Vuelta", "Vueltas"],
+          data: [
+              { "pos": 1, "name": "Carlos Reyes", "bestLap": "1:40.808", "laps": 7, "diff": "-" },
+              { "pos": 2, "name": "Gabo Medina", "bestLap": "1:41.420", "laps": 6, "diff": "+0.612" },
+              { "pos": 3, "name": "Luis Monasterio", "bestLap": "1:41.466", "laps": 9, "diff": "+0.658" },
+              { "pos": 4, "name": "Elionay Delgado", "bestLap": "1:41.656", "laps": 10, "diff": "+0.848" },
+              { "pos": 5, "name": "Felix Vargas", "bestLap": "1:41.858", "laps": 8, "diff": "+1.050" },
+              { "pos": 6, "name": "Jose Pernia", "bestLap": "1:41.899", "laps": 7, "diff": "+1.091" },
+              { "pos": 7, "name": "Castor Morales", "bestLap": "1:42.257", "laps": 7, "diff": "+1.449" },
+              { "pos": 8, "name": "Cesar Alejandro", "bestLap": "1:42.496", "laps": 4, "diff": "+1.688" },
+              { "pos": 9, "name": "Luis Millan", "bestLap": "1:42.826", "laps": 6, "diff": "+2.018" },
+              { "pos": 10, "name": "Juan Sanz", "bestLap": "1:43.028", "laps": 4, "diff": "+2.220" },
+              { "pos": 11, "name": "Ranses Gutierrez", "bestLap": "1:43.040", "laps": 8, "diff": "+2.232" },
+              { "pos": 12, "name": "Erick Ramirez", "bestLap": "1:45.042", "laps": 3, "diff": "+4.234" },
+              { "pos": 13, "name": "Hugo De Sousa", "bestLap": "1:45.445", "laps": 2, "diff": "+4.637" },
+              { "pos": 14, "name": "Pablo Ricupero", "bestLap": "1:45.696", "laps": 1, "diff": "+4.888" }
+          ]
+        }
+      }
+    },
+    // Más rondas...
+  },
+  // Más campeonatos...
+};
+
+  // Event listeners para los botones de ver resultados generales
   document.querySelectorAll(".view-results").forEach((button) => {
     button.addEventListener("click", function (e) {
       e.preventDefault();
@@ -701,6 +835,165 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Event listeners para los items de ronda
+  document.querySelectorAll(".round-item.clickable").forEach(item => {
+    item.addEventListener("click", function() {
+      const championshipId = this.closest(".championship-card").getAttribute("data-championship");
+      const roundId = this.getAttribute("data-round");
+      openRaceDetailsModal(championshipId, roundId);
+    });
+  });
+
+  // Función para abrir el modal de detalles de carrera
+  function openRaceDetailsModal(championshipId, roundId) {
+  const modal = document.getElementById("race-details-modal");
+  const titleElement = document.getElementById("race-modal-title");
+  const subtitleElement = document.getElementById("race-modal-subtitle");
+  
+  // Verificar que los datos existen
+  if (!raceDetailsData[championshipId]) {
+    console.error("No se encontró el campeonato:", championshipId);
+    return;
+  }
+  
+  const roundData = raceDetailsData[championshipId][roundId];
+  
+  if (!roundData) {
+    console.error(`No se encontraron datos para ${championshipId} - ${roundId}`);
+    return;
+  }
+
+  // Configurar títulos
+  titleElement.textContent = roundData.title;
+  subtitleElement.textContent = championshipsData[championshipId].title;
+
+  // Cargar datos
+  document.getElementById("race-results").innerHTML = 
+    generateRaceResults(roundData.results);
+  document.getElementById("race-qualifying").innerHTML = 
+    generateRaceQualifying(roundData.qualifying);
+  document.getElementById("race-practice").innerHTML = 
+    generateRacePractice(roundData.practice);
+  
+  // Mostrar modal
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+  // Funciones para generar tablas de resultados
+  function generateRaceResults(resultsData) {
+    if (!resultsData) return "<p>No hay datos de resultados disponibles.</p>";
+    
+    let html = "";
+    
+    for (const [category, data] of Object.entries(resultsData)) {
+      html += `<h3 class="category-title">${data.title}</h3>`;
+      html += `<table class="race-details-table">`;
+      html += `<thead><tr>${data.headers.map(header => `<th>${header}</th>`).join("")}</tr></thead>`;
+      html += `<tbody>`;
+      
+      // Encontrar la vuelta más rápida global
+      const fastestLaps = data.data.map(item => item.fastestLap).filter(Boolean);
+      const globalFastestLap = fastestLaps.length > 0 ? 
+        fastestLaps.reduce((a, b) => a < b ? a : b) : null;
+      
+      data.data.forEach(item => {
+        html += `<tr>`;
+        // Mapear cada header a su propiedad correspondiente en el objeto
+        data.headers.forEach(header => {
+          const headerKey = {
+            'Pos': 'pos',
+            'Piloto': 'name',
+            'Equipo': 'team',
+            'Diferencia': 'time',
+            'Vuelta Más Rápida': 'fastestLap',
+            'Puntos': 'points'
+          }[header] || header.toLowerCase();
+          
+          let value = item[headerKey] || "";
+          
+          if (header === "Vuelta Más Rápida" && value === globalFastestLap) {
+            value = `<span class="fastest-lap"><i class="fas fa-stopwatch"></i> ${value}</span>`;
+          }
+          
+          html += `<td>${value}</td>`;
+        });
+        html += `</tr>`;
+      });
+      
+      html += `</tbody></table>`;
+    }
+    
+    return html;
+  }
+
+  function generateRaceQualifying(qualifyingData) {
+  if (!qualifyingData) return "<p>No hay datos de clasificación disponibles.</p>";
+  
+  let html = "";
+  
+  for (const [category, data] of Object.entries(qualifyingData)) {
+    html += `<h3 class="category-title">${data.title}</h3>`;
+    html += `<table class="race-details-table">`;
+    html += `<thead><tr>${data.headers.map(header => `<th>${header}</th>`).join("")}</tr></thead>`;
+    html += `<tbody>`;
+    
+    data.data.forEach(item => {
+      html += `<tr>`;
+      data.headers.forEach(header => {
+        const headerKey = {
+          'Pos': 'pos',
+          'Piloto': 'name',
+          'Equipo': 'team',
+          'Mejor Vuelta': 'bestLap',
+          'Diferencia': 'diff'
+        }[header] || header.toLowerCase();
+        
+        html += `<td>${item[headerKey] || ""}</td>`;
+      });
+      html += `</tr>`;
+    });
+    
+    html += `</tbody></table>`;
+  }
+  
+  return html;
+}
+
+function generateRacePractice(practiceData) {
+  if (!practiceData) return "<p>No hay datos de práctica disponibles.</p>";
+  
+  let html = "";
+  
+  for (const [category, data] of Object.entries(practiceData)) {
+    html += `<h3 class="category-title">${data.title}</h3>`;
+    html += `<table class="race-details-table">`;
+    html += `<thead><tr>${data.headers.map(header => `<th>${header}</th>`).join("")}</tr></thead>`;
+    html += `<tbody>`;
+    
+    data.data.forEach(item => {
+      html += `<tr>`;
+      data.headers.forEach(header => {
+        const headerKey = {
+          'Pos': 'pos',
+          'Piloto': 'name',
+          'Equipo': 'team',
+          'Mejor Vuelta': 'bestLap',
+          'Vueltas': 'laps'
+        }[header] || header.toLowerCase();
+        
+        html += `<td>${item[headerKey] || ""}</td>`;
+      });
+      html += `</tr>`;
+    });
+    
+    html += `</tbody></table>`;
+  }
+  
+  return html;
+}
+
+  // Función para cargar datos en los modales de campeonato
   function loadChampionshipData(modal, championship) {
     const modalTitle = modal.querySelector(".modal-title");
     modalTitle.textContent = championship.title;
@@ -714,6 +1007,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Función para generar tablas generales
   function generateTable(tabData) {
     const headers = tabData.headers
       .map((header) => `<th>${header}</th>`)
@@ -728,26 +1022,27 @@ document.addEventListener("DOMContentLoaded", function () {
       .join("");
 
     return `
-            <h3>${tabData.title}</h3>
-            <table class="results-table">
-                <thead><tr>${headers}</tr></thead>
-                <tbody>${rows}</tbody>
-            </table>
-        `;
+      <h3>${tabData.title}</h3>
+      <table class="results-table">
+        <thead><tr>${headers}</tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    `;
   }
 
-  // Funciones para cerrar modales y cambiar pestañas (igual que antes)
+  // Cerrar modales
   document.querySelectorAll(".close-modal").forEach((button) => {
     button.addEventListener("click", function () {
-      const modal = this.closest(".results-modal");
+      const modal = this.closest(".results-modal, .race-details-modal");
       modal.style.display = "none";
       document.body.style.overflow = "auto";
     });
   });
 
+  // Cambiar pestañas
   document.querySelectorAll(".tab-btn").forEach((button) => {
     button.addEventListener("click", function () {
-      const modal = this.closest(".results-modal");
+      const modal = this.closest(".results-modal, .race-details-modal");
       const tabId = this.getAttribute("data-tab");
 
       modal
@@ -776,5 +1071,14 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("mobile-menu").addEventListener("click", function () {
     this.classList.toggle("active");
     document.querySelector(".nav-menu").classList.toggle("active");
+  });
+});
+
+document.querySelectorAll(".round-item.clickable").forEach(item => {
+  item.addEventListener("click", function() {
+    const championshipCard = this.closest(".championship-card");
+    console.log("Elemento championshipCard:", championshipCard);
+    console.log("Atributo data-championship:", championshipCard.getAttribute("data-championship"));
+    console.log("Atributo data-round:", this.getAttribute("data-round"));
   });
 });
