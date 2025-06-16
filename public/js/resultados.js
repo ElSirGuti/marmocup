@@ -764,8 +764,8 @@ document.addEventListener("DOMContentLoaded", function () {
             { pos: 8, name: "Gabo Medina", bestLap: "1:41.745", diff: "+0.730" },
             { pos: 9, name: "Cesar Alejandro", bestLap: "1:41.918", diff: "+0.903" },
             { pos: 10, name: "Luis Millan", bestLap: "1:42.581", diff: "+1.566" },
-            { pos: 11, name: "Juan Sanzz", bestLap: "1:42.884", diff: "+1.869" },
-            { pos: 12, name: "Ranses Gutierrez2", bestLap: "1:43.332", diff: "+2.317" },
+            { pos: 11, name: "Juan Sanz", bestLap: "1:42.884", diff: "+1.869" },
+            { pos: 12, name: "Ranses Gutierrez", bestLap: "1:43.332", diff: "+2.317" },
             { pos: 13, name: "Kevin Perez", bestLap: "1:45.465", diff: "+4.450" }
           ]
         }
