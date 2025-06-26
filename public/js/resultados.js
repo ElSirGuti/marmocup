@@ -41,12 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
             { "pos": 9, "name": "Gabriel Medina", "points": 45 },
             { "pos": 10, "name": "Erick Ramírez", "points": 42 },
             { "pos": 11, "name": "Felix Vargas", "points": 38 },
-            { "pos": 12, "name": "José Pernía", "points": 36 },
-            { "pos": 13, "name": "Luis Millán", "points": 18 },
-            { "pos": 14, "name": "Pablo Miguez", "points": 17 },
-            { "pos": 15, "name": "Kevin Prada", "points": 16 },
-            { "pos": 16, "name": "Andrés Gutiérrez", "points": 0 },
-            { "pos": 17, "name": "Anthony Briceño", "points": 0 }
+            { "pos": 12, "name": "Ransés Gutiérrez", "points": 24 },
+            { "pos": 13, "name": "José Pernía", "points": 20 },
+            
+            { "pos": 14, "name": "Luis Millán", "points": 18 },
+            { "pos": 15, "name": "Pablo Miguez", "points": 17 },
+            { "pos": 16, "name": "Kevin Prada", "points": 16 },
+            { "pos": 17, "name": "Andrés Gutiérrez", "points": 0 },
+            { "pos": 18, "name": "Anthony Briceño", "points": 0 }
           ],
         },
       },
@@ -850,8 +852,8 @@ document.addEventListener("DOMContentLoaded", function () {
               { "pos": 11, "name": "Felix Vargas", "time": "+1:01.150", "fastestLap": "", "points": 19 },
               { "pos": 12, "name": "Luis Millan", "time": "+2L", "fastestLap": "", "points": 18 },
               { "pos": 13, "name": "Pablo Miguez", "time": "+2L", "fastestLap": "", "points": 17 },
-              { "pos": 14, "name": "José Pernia", "time": "+3L", "fastestLap": "", "points": 16 },
-              { "pos": 15, "name": "Andres Gutiérrez", "time": "+8L", "fastestLap": "", "points": "0" }
+              { "pos": 14, "name": "José Pernia", "time": "+3L", "fastestLap": "", "points": "0" },
+              { "pos": 15, "name": "Andres Gutiérrez", "time": "DNF", "fastestLap": "", "points": "0" }
           ]
         }
       }
