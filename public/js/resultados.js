@@ -957,7 +957,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { "pos": 7, "name": "Ricardo Serrano Lovera", "time": "+1:35.462", "fastestLap": "1:42.670", "points": 26 },
             { "pos": 8, "name": "Carlos E Alvarez R", "time": "+1:44.734", "fastestLap": "1:43.308", "points": 24 },
             { "pos": 9, "name": "Luis F Ramírez", "time": "+7L", "fastestLap": "N/A", "points": "0" },
-            { "pos": 10, "name": "José Manuel Ruiz", "time": "+15L", "fastestLap": "N/A", "points": "0" }
+            { "pos": 10, "name": "José Manuel Ruiz", "time": "DNS", "fastestLap": "N/A", "points": "0" }
           ]
         },
         "toyota-gr86": {
