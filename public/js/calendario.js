@@ -1,71 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Datos de ejemplo para eventos
     const eventos = {
-        'junio-2025': [
-            {
-                id: 'evento-1',
-                imagen: 'img/circuitos/oschersleben.jpg',
-                torneo: 'MarmoCup Sim Boxer 2025',
-                ronda: 'Ronda 1: Oschersleben',
-                plataforma: 'iRacing',
-                fecha: '13 Junio 2025',
-                hora: '19:00 GMT-4',
-                estado: 'Concluido'
-            },
-            // {
-            //     id: 'evento-2',
-            //     imagen: 'img/circuitos/spa-pcup.jpg',
-            //     torneo: 'Porsche Mobil 1 Super Cup',
-            //     ronda: 'Ronda 5: Spa Francorchamps',
-            //     plataforma: 'Assetto Corsa',
-            //     fecha: '15 Junio 2025',
-            //     hora: '20:00 GMT-4',
-            //     estado: 'Próximo'
-            // },
-            {
-                id: 'evento-3',
-                imagen: 'img/circuitos/vir.jpg',
-                torneo: 'MarmoCup Sim Boxer 2025',
-                ronda: 'Ronda 2: Virginia International Raceway',
-                plataforma: 'iRacing',
-                fecha: '20 Junio 2025',
-                hora: '19:00 GMT-4',
-                estado: 'Concluido'
-            },
-            // {
-            //     id: 'evento-4',
-            //     imagen: 'img/circuitos/hungaroring.jpg',
-            //     torneo: 'Porsche Mobil 1 Super Cup',
-            //     ronda: 'Ronda 6: Hungaroring',
-            //     plataforma: 'Assetto Corsa',
-            //     fecha: '22 Junio 2025',
-            //     hora: '20:00 GMT-4',
-            //     estado: 'Próximo'
-            // },
-            {
-                id: 'evento-5',
-                imagen: 'img/circuitos/navarra.jpg',
-                torneo: 'MarmoCup Sim Boxer 2025',
-                ronda: 'Ronda 3: Navarra Circuit',
-                plataforma: 'iRacing',
-                fecha: '27 Junio 2025',
-                hora: '19:00 GMT-4',
-                estado: 'Próximo'
-            },
-            // {
-            //     id: 'evento-6',
-            //     imagen: 'img/circuitos/zandvoort.jpeg',
-            //     torneo: 'Porsche Mobil 1 Super Cup',
-            //     ronda: 'Ronda 7: Zandvoort',
-            //     plataforma: 'Assetto Corsa',
-            //     fecha: '29 Junio 2025',
-            //     hora: '20:00 GMT-4',
-            //     estado: 'Próximo'
-            // }
-        ],
         'julio-2025': [
             {
-                id: 'evento-7',
+                id: 'evento-1',
                 imagen: 'img/circuitos/okayama.jpg',
                 torneo: 'MarmoCup Sim Boxer 2025',
                 ronda: 'Ronda 4: Okayama International Circuit',
