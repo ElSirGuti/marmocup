@@ -8,44 +8,45 @@ document.addEventListener("DOMContentLoaded", function () {
           title: "Pilotos Porsche Cup",
           headers: ["Pos", "Piloto", "Puntos"],
           data: [
-            { "pos": 1, "name": "Gabriel Parra", "points": 58 + 48 + 53 },
-            { "pos": 2, "name": "Gustavo Mendez", "points": 40 + 50 + 45 },
-            { "pos": 3, "name": "Paul Ordoñez", "points": 26 + 28 + 35 },
-            { "pos": 4, "name": "Ricardo Serrano", "points": 35 + 24 + 26 },
-            { "pos": 5, "name": "Hector Garcia", "points": 24 + 26 + 28 },
-            { "pos": 6, "name": "Jhoiner Cornelis", "points": 0 + 35 + 30 },
-            { "pos": 7, "name": "Andres Aza", "points": 0 + 30 + 32 },
-            { "pos": 8, "name": "José Manuel Ruiz", "points": 28 + 22 + 0 },
-            { "pos": 9, "name": "Carlos Alvarez", "points": 0 + 20 + 24 },
-            { "pos": 10, "name": "Luis Ramírez", "points": 19 + 19 + 0 },
-            { "pos": 11, "name": "Jesus Zabala", "points": 32 + 0 + 0 },
-            { "pos": 12, "name": "Luis Gonzalez", "points": 0 + 32 + 0 },
-            { "pos": 13, "name": "Victor Cova", "points": 30 + 0 + 0 },
-            { "pos": 14, "name": "Carlos Alemán", "points": 22 + 0 + 0 },
-            { "pos": 15, "name": "Eduardo Socarras", "points": 20 + 0 + 0 }
+            { "pos": 1, "name": "Gabriel Parra", "points": 58 + 48 + 53 + 58 },
+            { "pos": 2, "name": "Gustavo Mendez", "points": 40 + 50 + 45 + 0},
+            { "pos": 3, "name": "Paul Ordoñez", "points": 26 + 28 + 35 + 40},
+            { "pos": 4, "name": "Ricardo Serrano", "points": 35 + 24 + 26 + 30},
+            { "pos": 5, "name": "Hector Garcia", "points": 24 + 26 + 28 + 22},
+            { "pos": 6, "name": "Jhoiner Cornelis", "points": 0 + 35 + 30 + 26 },
+            { "pos": 7, "name": "Andres Aza", "points": 0 + 30 + 32 + 24 },
+            { "pos": 8, "name": "José Manuel Ruiz", "points": 28 + 22 + 0 + 32 },
+            { "pos": 9, "name": "Carlos Alvarez", "points": 0 + 20 + 24 + 35 },
+            { "pos": 10, "name": "Luis Ramírez", "points": 19 + 19 + 0 + 20 },
+            { "pos": 11, "name": "Eduardo Socarras", "points": 20 + 0 + 0 + 28},
+            { "pos": 12, "name": "Jesus Zabala", "points": 32 + 0 + 0 + 0 },
+            { "pos": 13, "name": "Luis Gonzalez", "points": 0 + 32 + 0 + 0 },
+            { "pos": 14, "name": "Victor Cova", "points": 30 + 0 + 0 + 0 },
+            { "pos": 15, "name": "Carlos Alemán", "points": 22 + 0 + 0 + 0},
           ],
         },
         "boxer-toyota": {
           title: "Pilotos Toyota GR86",
           headers: ["Pos", "Piloto", "Puntos"],
           data: [
-            { "pos": 1, "name": "Carlos Reyes", "points": 55 + 53 + 55 },
-            { "pos": 2, "name": "Hugo De Sousa", "points": 40 + 35 + 35 },
-            { "pos": 3, "name": "Luis Monasterio", "points": 28 + 30 + 43 },
-            { "pos": 4, "name": "Juan Sanz", "points": 32 + 32 + 26 },
-            { "pos": 5, "name": "Pablo Ricupero", "points": 18 + 40 + 32 },
-            { "pos": 6, "name": "Elionay Delgado", "points": 33 + 27 + 18 },
-            { "pos": 7, "name": "Cesar Acevedo", "points": 26 + 24 + 28 },
-            { "pos": 8, "name": "Gabriel Medina", "points": 17 + 28 + 30 },
-            { "pos": 9, "name": "Erick Ramirez", "points": 22 + 20 + 22 },
-            { "pos": 10, "name": "Castor Morales", "points": 35 + 26 + 0 },
-            { "pos": 11, "name": "Ranses Gutierrez", "points": 24 + 0 + 24 },
-            { "pos": 12, "name": "Felix Vargas", "points": 19 + 19 + 0 },
-            { "pos": 13, "name": "Pablo Miguez", "points": 0 + 17 + 20 },
-            { "pos": 14, "name": "Kevin Perez", "points": 16 + 0 + 19 },
-            { "pos": 15, "name": "Jose Pernia", "points": 20 + 0 + 0 },
-            { "pos": 16, "name": "Luis Millán", "points": 0 + 18 + 0 },
-            { "pos": 17, "name": "Andres Gutiérrez", "points": 0 + 0 + 0 }
+            { "pos": 1, "name": "Carlos Reyes", "points": 55 + 53 + 55 + 22 },
+            { "pos": 2, "name": "Luis Monasterio", "points": 28 + 30 + 43 + 58 },
+            { "pos": 3, "name": "Hugo De Sousa", "points": 40 + 35 + 35 + 24},
+            { "pos": 4, "name": "Pablo Ricupero", "points": 18 + 40 + 32 + 32},
+            { "pos": 5, "name": "Elionay Delgado", "points": 33 + 27 + 18 + 40},
+            { "pos": 6, "name": "Cesar Acevedo", "points": 26 + 24 + 28 + 35 },
+            { "pos": 7, "name": "Juan Sanz", "points": 32 + 32 + 26 + 19 },
+            { "pos": 8, "name": "Erick Ramirez", "points": 22 + 20 + 22 + 30 },
+            { "pos": 9, "name": "Gabriel Medina", "points": 17 + 28 + 30 + 0},
+            { "pos": 10, "name": "Kevin Perez", "points": 16 + 0 + 19 + 28},
+            { "pos": 11, "name": "Castor Morales", "points": 35 + 26 + 0 + 0 },
+            { "pos": 12, "name": "Pablo Miguez", "points": 0 + 17 + 20 + 20},
+            { "pos": 13, "name": "Ranses Gutierrez", "points": 24 + 0 + 24 + 0},
+            { "pos": 14, "name": "Felix Vargas", "points": 19 + 19 + 0 + 0}, 
+            { "pos": 15, "name": "Andres Gutiérrez", "points": 0 + 0 + 0 + 26 }, 
+            { "pos": 16, "name": "Jose Pernia", "points": 20 + 0 + 0 + 0},
+            { "pos": 17, "name": "Luis Millán", "points": 0 + 18 + 0 + 0 },
+            
           ],
         },
       },
@@ -1006,6 +1007,118 @@ document.addEventListener("DOMContentLoaded", function () {
           headers: ["Pos", "Piloto", "Mejor Vuelta", "Vueltas"],
           data: [
 
+          ]
+        }
+      }
+    },
+    "ronda-4": {
+      title: "Ronda 4: Okayama Circuit",
+      subtitle: "MarmoCup SimBoxer 2025",
+      date: "4 Jul 2025",
+      results: {
+        "porsche-cup": {
+          title: "Porsche Cup",
+          headers: ["Pos", "Piloto", "Diferencia", "Vuelta Más Rápida", "Puntos"],
+          data: [
+            { "pos": 1, "name": "Gabriel Parra", "time": "----", "fastestLap": "1:30.577", "points": 50 + 5 + 3 },
+            { "pos": 2, "name": "Paul Ordoñez", "time": "+26.716", "fastestLap": "1:31.475", "points": 40 },
+            { "pos": 3, "name": "Carlos Alvarez", "time": "+28.983", "fastestLap": "1:31.729", "points": 35 },
+            { "pos": 4, "name": "José Manuel Ruiz", "time": "+34.007", "fastestLap": "1:32.025", "points": 32 },
+            { "pos": 5, "name": "Ricardo Serrano", "time": "+40.111", "fastestLap": "1:32.036", "points": 30 },
+            { "pos": 6, "name": "Eduardo Socarras", "time": "+1:03.478", "fastestLap": "1:32.782", "points": 28 },
+            { "pos": 7, "name": "Jhoiner Cornelis", "time": "+1:20.018", "fastestLap": "1:32.292", "points": 26 },
+            { "pos": 8, "name": "Andres Aza", "time": "+1:25.448", "fastestLap": "1:32.861", "points": 24 },
+            { "pos": 9, "name": "Hector Garcia", "time": "+1:28.628", "fastestLap": "1:34.003", "points": 22 },
+            { "pos": 10, "name": "Luis Ramirez", "time": "+2L", "fastestLap": "1:31.953", "points": 20 }
+          ]
+        },
+        "toyota-gr86": {
+          title: "Toyota GR86",
+          headers: ["Pos", "Piloto", "Diferencia", "Vuelta Más Rápida", "Puntos"],
+          data: [
+            { "pos": 1, "name": "Luis Monasterio", "time": "----", "fastestLap": "1:44.085", "points": 50 + 5 + 3},
+            { "pos": 2, "name": "Elionay Delgado", "time": "+1.41", "fastestLap": "1:44.423", "points": 40},
+            { "pos": 3, "name": "Cesar Acevedo", "time": "+15.54", "fastestLap": "1:45.100", "points": 35 },
+            { "pos": 4, "name": "Pablo Ricupero", "time": "+33.58", "fastestLap": "1:45.303", "points": 32 },
+            { "pos": 5, "name": "Erick Ramirez", "time": "+1L", "fastestLap": "1:47.882", "points": 30 },
+            { "pos": 6, "name": "Kevin Prada Perez", "time": "+1L", "fastestLap": "1:49.960", "points": 28 },
+            { "pos": 7, "name": "Andrés Gutierrez", "time": "+1L", "fastestLap": "1:46.160", "points": 26 },
+            { "pos": 8, "name": "Hugo De Sousa", "time": "+1L", "fastestLap": "1:45.807", "points": 24 },
+            { "pos": 9, "name": "Carlos Reyes", "time": "+1L", "fastestLap": "1:45.287", "points": 22 },
+            { "pos": 10, "name": "Pablo Miguez", "time": "+2L", "fastestLap": "1:45.922", "points": 20 },
+            { "pos": 11, "name": "Juan Sanz", "time": "DNF", "fastestLap": "1:45.145", "points": 19 },
+            { "pos": 12, "name": "Castor Morales", "time": "DNF", "fastestLap": "1:45.024", "points": "0" }
+          ]
+        }
+      },
+      qualifying: {
+        "porsche-cup": {
+          title: "Porsche Cup",
+          headers: ["Pos", "Piloto", "Mejor Vuelta", "Diferencia"],
+          data: [
+              { "pos": 1, "name": "Gabriel Parra", "bestLap": "1:30.200", "diff": "----" },
+              { "pos": 2, "name": "Paul Ordoñez", "bestLap": "1:30.980", "diff": "+0.780" },
+              { "pos": 3, "name": "Carlos Alvarez", "bestLap": "1:31.623", "diff": "+1.423" },
+              { "pos": 4, "name": "José Manuel Ruiz", "bestLap": "1:31.639", "diff": "+1.439" },
+              { "pos": 5, "name": "Ricardo Serrano", "bestLap": "1:31.913", "diff": "+1.713" },
+              { "pos": 6, "name": "Jhoiner Cornelis", "bestLap": "1:32.070", "diff": "+1.870" },
+              { "pos": 7, "name": "Luis Ramirez", "bestLap": "1:32.479", "diff": "+2.279" },
+              { "pos": 8, "name": "Eduardo Socarras", "bestLap": "1:33.401", "diff": "+3.201" },
+              { "pos": 9, "name": "Hector Garcia", "bestLap": "1:33.683", "diff": "+3.483" },
+              { "pos": 10, "name": "Andrea Aza", "bestLap": "1:35.018", "diff": "+4.818" },
+            ]
+        },
+        "toyota-gr86": {
+          title: "Toyota GR86",
+          headers: ["Pos", "Piloto", "Mejor Vuelta", "Diferencia"],
+          data: [
+              { "pos": 1, "name": "Luis Monasterio", "bestLap": "1:44.052", "diff": "----" },
+              { "pos": 2, "name": "Castor Morales", "bestLap": "1:44.6848", "diff": "+0.596" },
+              { "pos": 3, "name": "Cesar Acevedo", "bestLap": "1:44.755", "diff": "+0.703" },
+              { "pos": 4, "name": "Elionay Delgado", "bestLap": "1:44.945", "diff": "+0.893" },
+              { "pos": 5, "name": "Carlos Reyes", "bestLap": "1:45.007", "diff": "+0.955" },
+              { "pos": 6, "name": "Pablo Ricupero", "bestLap": "1:46.018", "diff": "+1.966" },
+              { "pos": 7, "name": "Pablo Miguez", "bestLap": "1:46.039", "diff": "+1.987" },
+              { "pos": 8, "name": "Andrés Gutierrez", "bestLap": "1:46.261", "diff": "+2.209" },
+              { "pos": 9, "name": "Kevin Perez", "bestLap": "1:50.134", "diff": "+6.082" },
+              { "pos": 10, "name": "Hugo De Sousa", "bestLap": "---", "diff": "---" },
+              { "pos": 11, "name": "Juan Sanz", "bestLap": "---", "diff": "---" },
+              { "pos": 12, "name": "Erick Ramirez", "bestLap": "---", "diff": "---" },
+            ]
+        }
+      },
+      practice: {
+        "porsche-cup": {
+          title: "Porsche Cup",
+          headers: ["Pos", "Piloto", "Mejor Vuelta", "Vueltas"],
+          data: [
+              { "pos": 1, "name": "Gabriel Parra", "bestLap": "1:30.223", "laps": 24 },
+              { "pos": 2, "name": "Paul Ordoñez", "bestLap": "1:31.339", "laps": 23 },
+              { "pos": 3, "name": "Carlos Alvarez", "bestLap": "1:31.376", "laps": 4 },
+              { "pos": 4, "name": "José Manuel Ruiz", "bestLap": "1:31.714", "laps": 11 },
+              { "pos": 5, "name": "Luis Ramirez", "bestLap": "1:31.725", "laps": 27 },
+              { "pos": 6, "name": "Ricardo Serrano", "bestLap": "1:31.890", "laps": 25 },
+              { "pos": 7, "name": "Jhoiner Cornelis", "bestLap": "1:31.960", "laps": 19 },
+              { "pos": 8, "name": "Hector Garcia", "bestLap": "1:33.528", "laps": 28 },
+              { "pos": 9, "name": "Eduardo Socarras", "bestLap": "1:33.628", "laps": 6 },
+          ]
+        },
+        "toyota-gr86": {
+          title: "Toyota GR86",
+          headers: ["Pos", "Piloto", "Mejor Vuelta", "Vueltas"],
+          data: [
+              { "pos": 1, "name": "Luis Monasterio", "bestLap": "1:43.964", "laps": 21 },
+              { "pos": 2, "name": "Elionay Delgado", "bestLap": "1:44.608", "laps": 30 },
+              { "pos": 3, "name": "Carlos Reyes", "bestLap": "1:44.674", "laps": 9 },
+              { "pos": 4, "name": "Cesar Acevedo", "bestLap": "1:44.737", "laps": 27 },
+              { "pos": 5, "name": "Castor Morales", "bestLap": "1:45.115", "laps": 10 },
+              { "pos": 6, "name": "Pablo Ricupero", "bestLap": "1:45.832", "laps": 13 },
+              { "pos": 7, "name": "Juan Sanz", "bestLap": "1:45.845", "laps": 22 },
+              { "pos": 8, "name": "Andrés Gutierrez", "bestLap": "1:48.643", "laps": 15 },
+              { "pos": 9, "name": "Hugo De Sousa", "bestLap": "---", "laps": "0" },
+              { "pos": 10, "name": "Pablo Miguez", "bestLap": "1:54.282", "laps": 3 },
+              { "pos": 11, "name": "Erick Ramirez", "bestLap": "---", "laps": "0" },
+              { "pos": 12, "name": "Kevin Perez", "bestLap": "---", "laps": "0"},
           ]
         }
       }

@@ -10,18 +10,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 plataforma: 'iRacing',
                 fecha: '4 Julio 2025',
                 hora: '19:00 GMT-4',
-                estado: 'Próximo'
+                estado: 'Concluido'
             },
-            // {
-            //     id: 'evento-8',
-            //     imagen: 'img/circuitos/monza.jpeg',
-            //     torneo: 'Porsche Mobil 1 Super Cup',
-            //     ronda: 'Ronda 8: Monza',
-            //     plataforma: 'Assetto Corsa',
-            //     fecha: '6 Julio 2025',
-            //     hora: '20:00 GMT-4',
-            //     estado: 'Próximo'
-            // }
+            {
+                id: 'evento-2',
+                imagen: 'img/circuitos/sugo.avif',
+                torneo: 'MarmoCup Sim Boxer 2025',
+                ronda: 'Ronda 5: Sportsland SUGO',
+                plataforma: 'Assetto Corsa',
+                fecha: '10 Julio 2025',
+                hora: '20:00 GMT-4',
+                estado: 'Próximo'
+            }
         ]
     };
 
