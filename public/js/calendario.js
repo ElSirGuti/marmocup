@@ -1,88 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Datos de ejemplo para eventos
     const eventos = {
-        'julio-2025': [
-            {
-                id: 'evento-1',
-                imagen: 'img/circuitos/okayama.jpg',
-                torneo: 'MarmoCup Sim Boxer 2025',
-                ronda: 'Ronda 4: Okayama International Circuit',
-                plataforma: 'iRacing',
-                fecha: '4 Julio 2025',
-                hora: '19:00 GMT-4',
-                estado: 'Concluido'
-            },
-            {
-                id: 'evento-2',
-                imagen: 'img/circuitos/sugo.avif',
-                torneo: 'Super Formula Virtual 2025',
-                ronda: 'Ronda 5: Sportsland SUGO',
-                plataforma: 'Assetto Corsa',
-                fecha: '17 Julio 2025',
-                hora: '20:00 GMT-4',
-                estado: 'Próximo'
-            },
-            {
-                id: 'evento-3',
-                imagen: 'img/circuitos/spa-pcup.jpg',
-                torneo: 'Porsche Mobil 1 Super Cup Virtual 2025',
-                ronda: 'Ronda 5: Spa Francorchamps',
-                plataforma: 'Assetto Corsa',
-                fecha: '18 Julio 2025',
-                hora: '20:00 GMT-4',
-                estado: 'Próximo'
-            },
-            {
-                id: 'evento-4',
-                imagen: 'img/circuitos/bilsterbergmx5.png',
-                torneo: 'MarmoCup Track Toys Challenge 2025',
-                ronda: 'Ronda 3: Bilster Berg',
-                plataforma: 'Assetto Corsa',
-                fecha: '19 Julio 2025',
-                hora: '20:00 GMT-4',
-                estado: 'Próximo'
-            },
-            {
-                "id": "evento-5",
-                "imagen": "img/circuitos/fuji-sf.jpg",
-                "torneo": "Super Formula Virtual 2025",
-                "ronda": "Ronda 6: Fuji Speedway",
-                "plataforma": "Assetto Corsa",
-                "fecha": "24 Julio 2025",
-                "hora": "20:00 GMT-4",
-                "estado": "Próximo"
-            },
-            {
-                "id": "evento-8",
-                "imagen": "img/circuitos/hungaroring.jpg",
-                "torneo": "Porsche Mobil 1 Super Cup Virtual 2025",
-                "ronda": "Ronda 6: Hungaroring",
-                "plataforma": "Assetto Corsa",
-                "fecha": "25 Julio 2025",
-                "hora": "20:00 GMT-4",
-                "estado": "Próximo"
-            },
-            {
-                "id": "evento-9",
-                "imagen": "img/circuitos/okutama.png",
-                "torneo": "Track Toys Challenge 2025",
-                "ronda": "Ronda 4: Okutama",
-                "plataforma": "Assetto Corsa",
-                "fecha": "26 Julio 2025",
-                "hora": "20:00 GMT-4",
-                "estado": "Próximo"
-            },
-            {
-                "id": "evento-10",
-                "imagen": "img/circuitos/suzuka.webp",
-                "torneo": "Super Formula Virtual 2025",
-                "ronda": "Ronda 7: Suzuka",
-                "plataforma": "Assetto Corsa",
-                "fecha": "31 Julio 2025",
-                "hora": "20:00 GMT-4",
-                "estado": "Próximo"
-            }
-        ],
         'agosto-2025': [
             {
                 "id": "evento-2",
@@ -92,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "plataforma": "Assetto Corsa",
                 "fecha": "1 Agosto 2025",
                 "hora": "20:00 GMT-4",
-                "estado": "Próximo"
+                "estado": "Concluido"
             },
             {
                 "id": "evento-3",
@@ -100,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 "torneo": "Track Toys Challenge 2025",
                 "ronda": "Ronda 5: Bikernieki",
                 "plataforma": "Assetto Corsa",
-                "fecha": "2 Agosto 2025",
+                "fecha": "1 Agosto 2025",
                 "hora": "20:00 GMT-4",
-                "estado": "Próximo"
+                "estado": "Concluido"
             },
             {
                 "id": "evento-4",
@@ -112,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "plataforma": "Assetto Corsa",
                 "fecha": "8 Agosto 2025",
                 "hora": "20:00 GMT-4",
-                "estado": "Próximo"
+                "estado": "Concluido"
             },
             {
                 "id": "evento-5",
