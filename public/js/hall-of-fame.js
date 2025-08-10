@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Datos de ejemplo para pilotos
     const pilotsData = {
         "felix-vargas": {
             name: "Félix Vargas",
@@ -11,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             team: "Chigüire Racing Team",
             titles: ["IMSA VP Racing Sportscar Challenge 2025 - Categoría LMP3"],
             wins: 2,
-            podiums: 4,
+            podiums: 5,
             poles: 1,
             fastlaps: 1
         },
@@ -22,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
             age: 25,
             nationality: "Venezuela",
             flag: "img/flags/venezuela.png",
-            team: ["Chigüire Racing Team", "Etron Racing"],
+            team: ["Etron Racing", "Goticas Culonas"],
             titles: ["IMSA VP Racing Sportscar Challenge 2025 - Categoría GSX"],
             wins: 1,
-            podiums: 8,
-            poles: 0,
-            fastlaps: 1
+            podiums: 13,
+            poles: 1,
+            fastlaps: 2
         },
         "alejandro-torres": {
             name: "Alejandro Torres",
@@ -40,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
             titles: ["MarmoCup TCR Latam 2024"],
             wins: 1,
             podiums: 3,
-            poles: 0,
-            fastlaps: 0
+            poles: 1,
+            fastlaps: 1
         },
         "paul-alex": {
             name: "Paul Alexander Ordoñez",
@@ -52,24 +51,24 @@ document.addEventListener('DOMContentLoaded', function() {
             flag: "img/flags/venezuela.png",
             team: "Top Fuel Sim Racing Team",
             titles: [],
-            wins: 3,
-            podiums: 3,
-            poles: 1,
-            fastlaps: 2
+            wins: 4,
+            podiums: 7,
+            poles: 5,
+            fastlaps: 5
         },
         "luis-ramirez": {
             name: "Luis Ramírez",
             nickname: "",
             img: "img/miembros/team-3.jpg",
-            age: "XX",
+            age: "20",
             nationality: "Venezuela",
             flag: "img/flags/venezuela.png",
             team: "Champ Racing Inc.",
             titles: [],
             wins: 2,
-            podiums: 2,
-            poles: 3,
-            fastlaps: 2
+            podiums: 3,
+            poles: 4,
+            fastlaps: 3
         },
         "jhoiner-cornelis": {
             name: "Jhoiner Cornelis",
@@ -81,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function() {
             team: "Top Fuel Sim Racing Team",
             titles: [],
             wins: 2,
-            podiums: 5,
-            poles: 1,
+            podiums: 6,
+            poles: 2,
             fastlaps: 1
         },
         "ricardo-benitez": {
@@ -94,9 +93,64 @@ document.addEventListener('DOMContentLoaded', function() {
             flag: "img/flags/venezuela.png",
             team: "Upper Esport",
             titles: [],
-            wins: 2,
+            wins: 4,
+            podiums: 9,
+            poles: 4,
+            fastlaps: 6
+        },
+        "francisco-garlin":{
+            name: "Francisco Garlin",
+            nickname: "Panchito",
+            img: "img/pilotos/garlin - Copy.png",
+            age: "XX",
+            nationality: "Venezuela",
+            flag: "img/flags/venezuela.png",
+            team: "OnGrip SimRacing Team",
+            titles: ["Porsche Supercup 2025"],
+            wins: 4,
+            podiums: 5,
+            poles: 3,
+            fastlaps: 4
+        },
+        "gabriel-parra":{
+            name: "Gabriel Parra",
+            img: "img/pilotos/parra - Copy.png",
+            age: "XX",
+            nationality: "Venezuela",
+            flag: "img/flags/venezuela.png",
+            team: "Capybara Racing Team",
+            titles: ["MarmoCup SimBoxer - Categoría Porsche Cup"],
+            wins: 3,
             podiums: 4,
             poles: 4,
+            fastlaps: 3
+        },
+        "carlos-reyes":{
+            name: "Carlos Reyes",
+            nickname: "Charles King",
+            img: "img/pilotos/reyes - Copy.png",
+            age: "XX",
+            nationality: "Venezuela",
+            flag: "img/flags/venezuela.png",
+            team: "Top Fuel Sim Racing Team",
+            titles: ["MarmoCup SimBoxer - Categoría Toyota GR86"],
+            wins: 3,
+            podiums: 3,
+            poles: 1,
+            fastlaps: 2
+        },
+        "andres-gutierrez":{
+            name: "Andres Gutiérrez",
+            nickname: "Pan Sobao",
+            img: "img/miembros/team-4.png",
+            age: "21",
+            nationality: "Venezuela",
+            flag: "img/flags/venezuela.png",
+            team: "Top Fuel Sim Racing Team",
+            titles: ["Super Formula 2025"],
+            wins: 1,
+            podiums: 9,
+            poles: 1,
             fastlaps: 2
         },
         "pablo-granadillo": {
@@ -112,6 +166,20 @@ document.addEventListener('DOMContentLoaded', function() {
             podiums: 4,
             poles: 1,
             fastlaps: 2
+        },
+        "sergio-dasilva": {
+            name: "Sergio Da Silva",
+            nickname: "",
+            img: "img/pilotos/sergio.png",
+            age: "XX",
+            nationality: "Venezuela",
+            flag: "img/flags/venezuela.png",
+            team: "Chigüire Racing Team, SDM Racing",
+            titles: [],
+            wins: 4,
+            podiums: 8,
+            poles: 5,
+            fastlaps: 3
         }
 
     };
@@ -122,10 +190,10 @@ document.addEventListener('DOMContentLoaded', function() {
             img: "img/equipos/chiguire-racing-2.png",
             nationality: "Venezuela",
             flag: "img/flags/venezuela.png",
-            titles: ["IMSA VP Racing Sportscar Challenge 2025 - Categoría LMP3 - Trofeo de Pilotos", "IMSA VP Racing Sportscar Challenge 2025 - Categoría LMP3 - Trofeo de Equipos"],
-            wins: 6,
-            podiums: 27,
-            poles: 2,
+            titles: ["IMSA VP Racing Sportscar Challenge 2025 - Categoría LMP3 - Trofeo de Pilotos", "IMSA VP Racing Sportscar Challenge 2025 - Categoría LMP3 - Trofeo de Equipos", "Porsche Supercup 2025 - Trofeo de Equipos", "Super Formula 2025 - Trofeo de Pilotos", "Super Formula 2025 - Trofeo de Equipos"],
+            wins: 8,
+            podiums: 33,
+            poles: 3,
             fastlaps: 3,
             drivers: [
                 {
@@ -190,6 +258,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     img: "img/pilotos/alejandro.jpg",
                     nationality: "Venezuela",
                     flag: "img/flags/venezuela.png"
+                },
+                {
+                    name: 'Sergio Da Silva',
+                    nickname: "",
+                    img: "img/pilotos/sergio.png",
+                    nationality: "Venezuela",
+                    flag: "img/flags/venezuela.png"
                 }
 
             ]
@@ -200,10 +275,10 @@ document.addEventListener('DOMContentLoaded', function() {
             nationality: "Venezuela",
             flag: "img/flags/venezuela.png",
             titles: ["IMSA VP Racing Sportscar Challenge 2025 - Categoría GSX - Trofeo de Equipos", "MarmoCup TCR Latam 2024 - Trofeo de Equipos"],
-            wins: 6,
-            podiums: 14,
-            poles: 2,
-            fastlaps: 3,
+            wins: 7,
+            podiums: 18,
+            poles: 7,
+            fastlaps: 7,
             drivers: [
                 {
                     name: 'José Manuel Ruiz "Chema"',
@@ -271,8 +346,8 @@ document.addEventListener('DOMContentLoaded', function() {
             titles: ["TCR Latam 2024 - Trofeo de Pilotos"],
             wins: 4,
             podiums: 9,
-            poles: 6,
-            fastlaps: 7,
+            poles: 7,
+            fastlaps: 6,
             drivers: [
                 {
                     name: "Luis Ramírez",
