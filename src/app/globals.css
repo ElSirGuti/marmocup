@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors */
+  --c-orange: #FF5E1A;
+  /* Vibrant Racing Orange */
+  --c-orange-glow: rgba(255, 94, 26, 0.6);
+  --c-black: #080808;
+  --c-dark-grey: #121212;
+  --c-light-grey: #1E1E1E;
+  --c-white: #FFFFFF;
+  --c-accent: #39FF14;
+  /* Neon Green for status active */
+
+  /* Typography */
+  --font-display: var(--font-montserrat), sans-serif;
+  --font-body: var(--font-roboto), sans-serif;
+
+  /* Dimensions */
+  --nav-height: 80px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--c-black);
+  color: var(--c-white);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Noise Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  /* Extra Bold */
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+/* Utilities */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 8rem 0;
+  position: relative;
+}
+
+/* Custom UI Elements */
+.title-display {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  color: var(--c-white);
+  line-height: 0.9;
+}
+
+.title-display span.highlight {
+  color: var(--c-orange);
+  /* Text Stroke Effect */
+  -webkit-text-stroke: 0px;
+}
+
+.title-display span.outlined {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--c-white);
+  opacity: 0.5;
+}
+
+.btn-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--c-white);
+  color: var(--c-black);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  /* Pill shape */
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-main:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px var(--c-orange-glow);
+  background: var(--c-orange);
+  color: var(--c-white);
+}
+
+.btn-link {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.btn-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--c-orange);
+  transition: width .3s;
+}
+
+.btn-link:hover::after {
+  width: 100%;
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  grid-auto-rows: minmax(300px, auto);
+}
+
+.bento-item {
+  background: var(--c-light-grey);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.bento-item:hover {
+  transform: translateY(-5px);
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--c-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-light-grey);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-orange);
+}
